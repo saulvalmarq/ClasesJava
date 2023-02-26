@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="tarea3" id="A11F2BB3-CD2E-7359-02D4-A63015547F4C" version="3.5">
+<createdBy>levita</createdBy>
+<createdTime>2023-01-19 02:40:17 UTC</createdTime>
+<ownerDesignName>PRACTICA2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A11F2BB3-CD2E-7359-02D4-A63015547F4C</designId>
+</OSDM_Design>
