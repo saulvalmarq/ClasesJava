@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="pageone">
+            <div data-role="header" data-theme="b">
+                <h1>Eliminacion de Empleados</h1>
+            </div>
+            <form name="form" action="procesar_eliminar_empleado.jsp" method="POST">
+                <div data-role="main" class="ui-content">
+                    <label for="search">Numero de Nit del Empleado?</label>
+                    <input type="search" name="txtNitEmp" id="txtNitEmp" placeholder="Numero de Nit.." required>
+                    <br><br>
+                    <input type="submit" value="Eliminar" name="Eliminar" />
+                    <input type="reset" value="Limpiar Campos" name="Limpiar Campos" />
+                    <div data-role="footer" data-theme="b">
+                        <h1>Eliminar</h1>
+                        <div data-role="navbar">
+                            <ul>
+                                <li><a href="tryit.asp-filename=tryjqmob_themes_navbars.html#" data-icon="check">Eliminar</a></li>
+                                <li><a href="tryit.asp-filename=tryjqmob_themes_navbars.html#" data-icon="back">Limpiar Campos</a></li>
+                                <li><a href="index.html" data-icon="home" data-theme="b">Retornar al Menu</a></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div> 
+            </form>
+        </div> 
+    </body>
+</html>

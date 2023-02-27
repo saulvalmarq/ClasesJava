@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="build/generated-sources/ap-source-output"/>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/javax.faces.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/javax.persistence-2.2.1.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/org.eclipse.persistence.antlr-2.7.9.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/org.eclipse.persistence.asm-9.1.0.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/org.eclipse.persistence.core-2.7.9.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/org.eclipse.persistence.jpa-2.7.9.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/org.eclipse.persistence.jpa.jpql-2.7.9.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/org.eclipse.persistence.moxy-2.7.9.jar"/>
+	<classpathentry kind="lib" path="build/web/WEB-INF/lib/primefaces-10.0.0.jar"/>
+	<classpathentry kind="output" path="build/web/WEB-INF/classes"/>
+</classpath>

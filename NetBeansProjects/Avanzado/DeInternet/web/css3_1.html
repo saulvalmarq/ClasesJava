@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #animationdiv {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Chrome, Safari, Opera */
+                animation: myfirst 5s linear 2s infinite alternate;
+            }
+            /* Define Animation properties */
+            @keyframes myfirst {
+                0%   {
+                    background-color:yellow;
+                    left:0px;
+                    top:0px;
+                }
+                25%  {
+                    background-color:black;
+                    left:200px;
+                    top:0px;
+                }
+                50%  {
+                    background-color:pink;
+                    left:200px;
+                    top:200px;
+                }
+                75%  {
+                    background-color:green;
+                    left:0px;
+                    top:200px;
+                }
+                100% {
+                    background-color:red;
+                    left:0px;
+                    top:0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p><b>Note:</b> This demo will not work in internet explorer (IE9 & Less versions)</p>
+        <div id="animationdiv"></div>
+    </body>
+</html>

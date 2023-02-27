@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+         <title>Paneles JQuery Mobile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <!--Incluir hojas de estilo jQuery Mobile -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <!--Incluir la biblioteca jQuery -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!--Incluir la biblioteca jQuery Mobile -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <div id="pagina1" data-role="main" class="ui-content">
+            <p>Haga clic en la imagen para ampliarla.</p>
+            <p>Observe que hemos agregado un "botón Atrás" en la esquina superior derecha.</p>
+            <a href="#miPopup" data-rel="popup" data-position-to="window">
+                <img src="pic/paj.jpg" alt="Vista del Pajaro" style="width:200px;">
+            </a>
+            <div data-role="popup" id="miPopup">
+                <p>¡Esta es mi foto!</p>
+                <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-derecha">Cerrar</a>
+                <img src="pic/paj.jpg" style="ancho:800px;alto:400px;" alt="Vista delPajaro">
+            </div>
+        </div>
+           
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+         <title>Paneles JQuery Mobile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <!--Incluir hojas de estilo jQuery Mobile -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <!--Incluir la biblioteca jQuery -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!--Incluir la biblioteca jQuery Mobile -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <div data-role="main" class="ui-content">
+            <a href="#miPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Colocar ventana emergente en la ventana </a>
+            <a href="#miPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="#demo">Colocarla ventana emergente en el elemento con id="demo"</a>
+            <a href="#miPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="origin">Posicionar la ventana emergente en el origen(predeterminado)</a>
+            <div data-role="popup" id="miPopup1" class="ui-content">
+                <p>Apareceré centrado dentro de la ventana.</p>
+            </div>
+            <div data-role="popup" id="miPopup2" class="ui-content">
+                <p>Aparecerádirectamente sobre el elemento con id="demo".</p>
+            </div>
+            <div data-role="popup" id="miPopup3" class="ui-content">
+                <p>Apareceré directamente sobre el enlace en el que se hizo clic.</p>
+            </div>
+            <p>Este es unparagraph.</p>
+            <p>Este es otro paragraph.</p>
+            <p>Este también es unparagraph.</p>
+            <p>Esto también es un párrafo. Tengo un elemento secundario: este es un elemento 
+                <span id="demo" style="color:red;">span</span> 
+                con id="demo", dentro del párrafo.
+            </p>
+        </div>
+    </body>
+</html>

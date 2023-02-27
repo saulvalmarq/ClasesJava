@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Contribuyente</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:panel id="panel" header="Contribuyente" style="margin-botton:10px;">
+                <h:panelGrid columns="3">
+                    <h:outputText value="Numero de Nit" />
+                    <p:inputText id="nit" value="#{beanContribuyente.nit}" required="true" maxlength="30" requiredMessage="El Numero de Nit es obligatorio" />
+                    <p:message for="nit" /> 
+                    <h:outputText value="Nombre del Contribuyente" />
+                    <p:inputText id="nombre" required="true" maxlength="30" requiredMessage="El Nombre del Contribuyente es obligatorio" />
+                    <p:message for="nombre" /> 
+                    <h:outputText value="Razon Social" />
+                    <p:inputText id="razon" required="true" maxlength="30" requiredMessage="La Razon Social es obligatoria" />
+                    <p:message for="razon" /> 
+                    <h:outputText value="Representante Legal" />
+                    <p:inputText id="representante" required="true" maxlength="30" requiredMessage="El Representante Legal es obligatorio" />
+                    <p:message for="representante" />
+                    <h:outputText value="Renta Anual" />
+                    <p:inputText id="renta" required="true" maxlength="30" requiredMessage="La Renta Anual es obligatoria" />
+                    <p:message for="renta" />
+                    <h:outputText value="Fecha de Registro" />
+                    <p:inputMask id="fecha" value="#{beanContribuyente.fecha}" mask="99/99/9999" required="true" maxlength="30" requiredMessage="La Fecha de Registro es obligatoria"/>
+                    <p:message for="fecha"/> 
+                    <h:outputText value="Estado del Contribuyente" />
+                    <p:inputText id="estado" required="true" maxlength="30" requiredMessage="El Estado del Contribuyente es obligatorio" />
+                    <p:message for="estado" />  
+                </h:panelGrid>                 
+            </p:panel>
+            <p:commandButton value="Guardar" update="panel" style="margin-right:20px" action="#{beanContribuyente.guardarContribuyente}"/>
+            <p:commandButton value="Limpiar" update="panel" style="margin-right:20px" action="#{beanContribuyente.limpiarContribuyente}"/> 
+        </h:form>     
+    </h:body>
+</html>
+

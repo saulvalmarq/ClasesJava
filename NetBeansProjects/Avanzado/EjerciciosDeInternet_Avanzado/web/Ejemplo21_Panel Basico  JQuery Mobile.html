@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+         <title>Paneles JQuery Mobile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <!--Incluir hojas de estilo jQuery Mobile -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <!--Incluir la biblioteca jQuery -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!--Incluir la biblioteca jQuery Mobile -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="pagina1">
+            <div data-role="panel" id="miPanel">
+                <h2>Encabezado del Panel.</h2>
+                <p>Algun texto en el panel..</p>
+            </div><div data-role="header">
+                <h1>Encabezado de página estándar </h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <p>Haga clic en el botón de abajo para abrir el Panel.</p>
+                <a href="#miPanel"class="ui-btn ui-btn-inline">Abrir Panel</a>
+            </div>
+            <div data-role="footer">
+                <h1>Texto del pie de pagina</h1>
+            </div>
+        </div>
+    </body>
+</html>

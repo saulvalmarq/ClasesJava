@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>"Mantenimiento Estudiantes"</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <h1>Mantenimiento Estudiantes</h1>
+    </head>
+    <body>
+        <form name="form" action="guardarEstudiantes.jsp" method="POST">
+                              
+            <table border="1" width="100">
+            <thead>
+                <tr>
+                    <th>Datos__Solicitados </th>
+                    <th>Completar los Siguientes Campos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>No. Carnet              :</td>
+                    <td><input type="text" name="txtCarnet" value="" size="10" required/></td>
+                </tr>
+                <tr>
+                    <td>Apellidos              :</td>
+                    <td><input type="text" name="txtApellidos" value="" size="50" required/></td>
+                </tr>
+                <tr>
+                    <td>Nombres                :</td>
+                    <td><input type="text" name="txtNombres" value="" size="50" required/></td>
+                </tr>
+                <tr>
+                    <td>Dirección              :</td>
+                    <td><input type="text" name="txtDireccion" value="" size="100" required/></td>
+                </tr>
+                <tr>
+                    <td>No. Teléfono            :</td>
+                    <td><input type="text" name="txtTelefono" value="" size="10" required/></td>
+                </tr>
+                <tr>
+                    <td>Código de Carrera      :</td>
+                    <td><input type="text" name="txtCarrera" value="" size="2" required/></td>
+                </tr>
+                <tr>
+                    <td> Código de Departamento               :</td>
+                    <td><input type="text" name="txtDepartamento" value="" size="2" required/></td>
+                </tr>
+                <tr>
+                    <td colspan = "2">
+                    <center>
+                    <input type="submit" value="Guardar" name="Guardar" />
+                    <input type="submit" value="Consultar" name="Consultar" /> 
+                    <input type="submit" value="Modificar" name="Modificar" />               
+                    <input type="submit" value="Eliminar" name="Eliminar" />           
+                          
+                    <input type="reset"  value="Limpiar">
+                    </center>
+                    </td>
+                </tr>
+            </tbody>
+        </table>            
+    </body>   
+</html>

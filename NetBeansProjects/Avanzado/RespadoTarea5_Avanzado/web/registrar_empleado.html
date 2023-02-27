@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="pageone">
+            <div data-role="header" data-theme="b">
+                <h1>Registro de Empleados</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <form name="form" action="procesar_empleado.jsp" method="POST">
+                    <p>Numero de Nit:</p>
+                    <input type="text" name="noNit" id="noNit" placeholder="Numero de Nit...">
+                    <p>Nombre del Empleado:</p>
+                    <input type="text" name="nombreEmp" id="nombreEmp" placeholder="Nombre del Empleado...">   
+                    <p>Fecha de Contratacion:</p>
+                    <input type="text" name="fechaCont" id="fechaCont" placeholder="Fecha de Contratacion...">
+                    <p>Cargo:</p>
+                    <input type="text" name="argoEmp" id="cargoEmp" placeholder="Cargo...">    
+                    <p>Salario Mensual:</p>
+                    <input type="text" name="salarioEmp" id="salarioEmp" placeholder="Salario Mensual...">
+                    <p>Descuento de Renta Mensual:</p>
+                    <input type="text" name="ddescuentoRent" id="descuentoRent" placeholder="Descuento de Renta Mensual...">
+
+                    <input type="submit" value="Registrar" name="Registrar" />
+                </form>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Empleado</h1>
+            </div>
+        </div> 
+
+    </body>
+</html>

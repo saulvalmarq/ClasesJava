@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="pageone">
+            <div data-role="header" data-theme="b">
+                <h1>Registro de Empleados </h1>
+            </div>
+            <form name="form" action="procesar_registro_empleado.jsp" method="POST">
+                <p>Numero de Nit:</p>
+                <input type="text" name="txtNitEmp" id="txtNitEmp" placeholder="Numero de Nit..." required>
+                <p>Nombre del Empleado:</p>
+                <input type="text" name="txtNombreEmp" id="txtNombreEmp" placeholder="Nombre del Empleado..." required>   
+                <p>Fecha de Contratacion:</p>
+                <input type="text" name="txtFechaCont" id="txtFechaCont" placeholder="Fecha de Contratacion..." required>
+                <p>Cargo:</p>
+                <input type="text" name="txtCargoEmp" id="txtCargoEmp" placeholder="Cargo..." required>    
+                <p>Salario Mensual:</p>
+                <input type="text" name="txtSalarioEmp" id="txtSalarioEmp" placeholder="Salario Mensual..." required>
+                <p>Descuento de Renta Mensual:</p>
+                <input type="text" name="txtDescuentoRent" id="txtDescuentoRent" placeholder="Descuento de Renta Mensual..." required>
+
+                <input type="submit" value="Registrar" name="Registrar" />
+                <input type="reset" value="Limpiar Campos" name="Limpiar Campos" />
+                <div data-role="footer" data-theme="b">
+                    <h1>Registro</h1>
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="tryit.asp-filename=tryjqmob_themes_navbars.html#" data-icon="check">Registrar</a></li>
+                            <li><a href="tryit.asp-filename=tryjqmob_themes_navbars.html#" data-icon="back">Limpiar Campos</a></li>
+                            <li><a href="index.html" data-icon="home" data-theme="b">Retornar al Menu</a></li>
+                        </ul>
+                    </div>   
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
